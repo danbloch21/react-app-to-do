@@ -77,7 +77,7 @@ function App(props) {
     />
   ));
 
-  const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task';
+  // const tasksNoun = taskList.length !== 1 ? 'tasks' : 'task'; //
   const headingText = `${taskList.length} tasks remaining`;
   const listHeadingRef = useRef(null);
   const prevTaskLength = usePrevious(tasks.length);
@@ -98,7 +98,6 @@ function App(props) {
   {headingText}
 </h2>
       <ul
-        role="list"
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
