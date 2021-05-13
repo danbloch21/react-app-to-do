@@ -21,6 +21,7 @@ const FILTER_MAP = {
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function App(props) {
+  console.log(props);
   const [tasks, setTasks] = useState(props.tasks);
   const [filter, setFilter] = useState('All');
   function addTask(name) {
